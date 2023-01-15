@@ -9,31 +9,49 @@
     </head>
     <body>
         <div class="container">
-            <div class="box">
+            <div>Score: <div class="score"></div></div>
+            <div class="hole">
                 <h1>normal mole</h1>
+                <div class="mole"></div>
             </div>
-            <div class="box">
+            <div class="hole">
                 <h1>king mole</h1>
+                <div class="mole"></div>
             </div>
-            <div class="box">
+            <div class="hole">
                 <h1>gold mole</h1>
+                 <div class="mole"></div>
             </div>
-            <div class="box">
+            <div class="hole">
                 <h1>happy new years !! mole</h1>
+                <div class="mole"></div>
             </div>
-            <div class="box">
+            <div class="hole">
                 <h1>christmas mole</h1>
+                <div class="mole"></div>
             </div>
-            <div class="box">
+            <div class="hole">
                 <h1>press the cards to get the moles! >> normal mole * normal * 1point * common >> king mole * special * 3points * uncommon </h1>
+                <div class="mole"></div>
             </div>
-            <div class="box">
+            <div class="hole">
                 <h1>gold mole * super special * 5points * rare >> happy new years !! mole * seasonal special * 15points * legendary</h1>
+                <div class="mole"></div>
             </div>
-            <div class="box">
+            <div class="hole">
                 <h1>christmas mole *seasonal special * 12points * ultra-rare</h1>
+                <div class="mole"></div>
             </div>
         </div>
         
+        <!-- Inline Javascript -->
+        <script>
+            const totalPoints = document.querySelector('.score')
+            const holes = document.querySelectorAll('.hole')
+            const moles = document.querySelectorAll('.mole')
+            console.log(totalPoints)
+            console.log(holes)
+            console.log(moles)
+        </script>
     </body>
 </html>
