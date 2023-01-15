@@ -4,7 +4,7 @@
 Moles (CSS JS)
 Background Image (CSS)
 Cursor/hammer (CSS JS)
-Total Points variable (JS)
+Total Points variable (JS) 
 Game Timer (JS)
 
 
