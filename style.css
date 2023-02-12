@@ -32,12 +32,35 @@ body,html {
 }
 
 .hole {
+    position: relative;
     width: 150px;
     height: 150px;
     background-color: bisque;
     border: 2px black solid;
 }
-h1 {
-    color: purple;
-} 
+ 
+.hole:after {
+    display: block;
+    /* background: url() bottom center no-repeat; */
+    background-size: contain;
+    content:'';
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index:2;
+    bottom: -30px;
+}
 
+.mole {
+    background: url('./mole.svg') bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.hole.up .mole {
+    top: 0;
+}
