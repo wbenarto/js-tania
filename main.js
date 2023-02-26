@@ -1,13 +1,12 @@
-
-
 let scoreboard = document.querySelector('.score')
 const holes = document.querySelectorAll('.hole')
 const moles = document.querySelectorAll('.mole')
 console.log(scoreboard)
 console.log(holes)
-console.log(moles)
+console.log("MOLES HERE!! " , moles)
 let lastHole;
 let timeUp = false;
+let score = 0;
 
 function randomTime(min, max) {
     // return us a randomized time for the moles to show up
@@ -29,7 +28,7 @@ function randomHole(holes) {
 }
 
 function peep() {
-    const time = randomTime(200, 1000)
+    const time = randomTime(300, 1000)
     const hole = randomHole(holes)
     hole.classList.add("up")
     setTimeout(()=>{
@@ -40,10 +39,27 @@ function peep() {
 
 function startGame() {
     console.log('game started')
-    scoreboard= 0;
+    scoreboard.innerHTML = 0;
     timeUp = false;
+    score = 0
     peep();
     setTimeout(()=> timeUp = true, 10000)
-    
+
 }
+
+function bonk(e){
+    console.log(e)
+    // if this element is NOT trusted, just continue
+    if (!e.isTrusted) return
+    score++
+    console.log(score)
+    this.classList.remove('up')
+    scoreboard.innerHTML = String(score);
+}
+
+moles.forEach(mole => mole.addEventListener('click', bonk))
 // randomize time between 15 sec to 200secs
+
+function addTwo(a) {
+    return a.toUpperCase()
+}
