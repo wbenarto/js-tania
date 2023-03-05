@@ -1,4 +1,5 @@
 let scoreboard = document.querySelector('.score')
+let timer = document.querySelector('.time')
 const holes = document.querySelectorAll('.hole')
 const moles = document.querySelectorAll('.mole')
 console.log(scoreboard)
@@ -41,6 +42,7 @@ function startGame() {
     console.log('game started')
     scoreboard.innerHTML = 0;
     timeUp = false;
+    timer.innerHTML = 10;
     score = 0
     peep();
     setTimeout(()=> timeUp = true, 10000)
