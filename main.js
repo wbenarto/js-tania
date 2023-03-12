@@ -46,6 +46,14 @@ function startGame() {
     score = 0
     peep();
     setTimeout(()=> timeUp = true, 10000)
+    var seconds=10
+    setInterval(()=>{
+        if (seconds == 0) {
+            clearInterval()
+        }
+        seconds-=1
+        timer.innerHTML = seconds
+    }, 1000)
 
 }
 
