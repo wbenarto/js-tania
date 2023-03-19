@@ -36,3 +36,18 @@ function equation(a, b) {
 
 equation(12, 8);
 console.log(equation(8.534, 23.56478))
+
+const fruits = ["apple", "banana", "strawberry", "raspberry", "blueberry"];
+console.log(fruits)
+fruits[0] = "pineapple";
+console.log(fruits)
+
+function topFruits(fruits) {
+    for (let i = 2; i <= fruits.length-1; i++) {
+        console.log('Here is my top ', i+1, 'fruit', fruits[i])
+    }
+    console.log('Here are my top favorite fruits...', fruits)
+}
+
+topFruits(fruits);
+console.log(fruits.length)
