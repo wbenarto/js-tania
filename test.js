@@ -37,7 +37,7 @@ function equation(a, b) {
 equation(12, 8);
 console.log(equation(8.534, 23.56478))
 
-const fruits = ["apple", "banana", "strawberry", "raspberry", "blueberry"];
+const fruits = ["apple", "banana", "strawberry", "raspberry", "blueberry", "mango"];
 console.log(fruits)
 fruits[0] = "pineapple";
 console.log(fruits)
@@ -51,3 +51,17 @@ function topFruits(fruits) {
 
 topFruits(fruits);
 console.log(fruits.length)
+
+function reverseFruits(fruits) {
+    for (let i = fruits.length-1; i >= 0; i-=2) {
+        console.log(fruits[i])
+    }
+}
+
+reverseFruits(fruits);
+
+fruits.push("pear", "dragonfruit")
+console.log(fruits)
+
+fruits.pop()
+console.log(fruits)
