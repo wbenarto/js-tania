@@ -10,9 +10,10 @@ body,html {
 .container {
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-image: url('/asset/raining-tacoes.png');
     flex-wrap: wrap;
     justify-content: space-between;
+    background-position: 0 -200px;
 }
 
 .start-button {
