@@ -66,3 +66,14 @@ console.log(fruits)
 fruits.pop()
 console.log(fruits)
 console.log(fruits)
+
+function add(a) {
+    if (fruits.includes(a)) {
+        console.log("fruit is already in the array")
+    }
+    else fruits.push(a);
+    console.log(fruits)
+}
+add("kiwi")
+add("jackfruit")
+add("kiwi")

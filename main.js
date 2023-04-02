@@ -47,14 +47,13 @@ function startGame() {
     peep();
     setTimeout(()=> timeUp = true, 10000)
     var seconds=10
-    setInterval(()=>{
-        if (seconds == 0) {
-            clearInterval()
-        }
+    const intervalId = setInterval(()=>{
         seconds-=1
         timer.innerHTML = seconds
     }, 1000)
-
+    setTimeout(() => {
+        clearInterval(intervalId);
+      }, 10000);
 }
 
 function bonk(e){
