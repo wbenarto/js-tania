@@ -77,3 +77,35 @@ function add(a) {
 add("kiwi")
 add("jackfruit")
 add("kiwi")
+
+
+// ES6 Javascript
+// Arrow Function
+
+// const = constant variable, immutable 
+// let = mutable variables
+// var = old way of creating variables
+
+// const array = [] // an array
+// const addNum = () => {} // es6
+// function addNum() {} // old way
+
+const addNum = (a,b) => {
+    console.log("New Arrow Function is soooo kewwlllll!!!")
+    return a + b
+}
+
+console.log(addNum(10, 20))
+
+console.log(fruits.filter((e)=>e == "banana")) // returns whatever the function inside returning true
+
+fruits.map(e=> {
+    console.log("my fave fruit " + e)
+    console.log('im testing hereeee')
+})
+
+for (let i=fruits.length; i>=0; i--) {
+    
+    console.log("my fave fruit " + fruits[i])
+    console.log('im testing hereeee FOR LOOP THE OLD WAYYYYYYYYYY')
+}
