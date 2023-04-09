@@ -109,3 +109,16 @@ for (let i=fruits.length; i>=0; i--) {
     console.log("my fave fruit " + fruits[i])
     console.log('im testing hereeee FOR LOOP THE OLD WAYYYYYYYYYY')
 }
+
+const subtractNum = (a, b) => {
+    console.log(a - b, "this console runs inside of the function")
+    return a - b
+}
+
+console.log(subtractNum(5, 4))
+
+fruits.map(e=> {
+    console.log("my fave fruit " + e)
+    console.log("im testing hereeee i'm tania")
+})
+

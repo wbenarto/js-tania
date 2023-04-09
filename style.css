@@ -14,6 +14,7 @@ body,html {
     flex-wrap: wrap;
     justify-content: space-between;
     background-position: 0 -200px;
+    position: relative;
 }
 
 .start-button {
@@ -38,10 +39,11 @@ body,html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 600px;
-    height: 400px;
-    padding: 40px;
-    gap: 15px;
+    width: 100%;
+    padding: 20px 0;
+    gap: 18px;
+    position: absolute;
+    bottom: 0;
     
 }
 
@@ -49,14 +51,11 @@ body,html {
     position: relative;
     width: 150px;
     height: 150px;
-    background-color: bisque;
-    border: 2px black solid;
     overflow: hidden;
 }
  
 .mole:after {
     display: block;
-    background-color: pink;
     /* background: url() bottom center no-repeat; */
     background-size: contain;
     content:'';
