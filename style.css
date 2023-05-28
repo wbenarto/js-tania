@@ -25,9 +25,12 @@ body,html {
     padding: 10px 40px;
     font-size: 2em;
     border: 5px black solid;
-    margin-top: 200px;
-    margin-left: 10px;
     border-radius: 10px;
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 .scoreboard {
