@@ -54,6 +54,8 @@ function startGame() {
     setTimeout(() => {
         clearInterval(intervalId);
       }, 10000);
+    const start = document.getElementById("start");
+    start.style.display = "none";
 }
 
 function bonk(e){
