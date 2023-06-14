@@ -42,11 +42,11 @@ function startGame() {
     console.log('game started')
     scoreboard.innerHTML = 0;
     timeUp = false;
-    timer.innerHTML = 10;
+    timer.innerHTML = 20;
     score = 0
     peep();
     setTimeout(()=> timeUp = true, 10000)
-    var seconds=10
+    var seconds=20
     const intervalId = setInterval(()=>{
         seconds-=1
         timer.innerHTML = seconds
