@@ -84,6 +84,16 @@ body,html {
     width: 150px;
     height: 150px;
     overflow: hidden;
+    /* background-image: url('/asset/hole.png'); */
+}
+
+.gravel {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
 }
  
 .mole:after {
