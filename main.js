@@ -8,6 +8,7 @@ console.log("MOLES HERE!! " , moles)
 let lastHole;
 let timeUp = false;
 let score = 0;
+let gameTime = 20000 // in milliseconds
 
 function randomTime(min, max) {
     // return us a randomized time for the moles to show up
@@ -44,8 +45,9 @@ function startGame() {
     timeUp = false;
     timer.innerHTML = 20;
     score = 0
+    
     peep();
-    setTimeout(()=> timeUp = true, 10000)
+    setTimeout(()=> timeUp = true, gameTime)
     var seconds=20
     const intervalId = setInterval(()=>{
         seconds-=1
@@ -53,7 +55,7 @@ function startGame() {
     }, 1000)
     setTimeout(() => {
         clearInterval(intervalId);
-      }, 10000);
+      }, gameTime);
     const start = document.getElementById("start");
     start.style.display = "none";
 }
@@ -74,3 +76,5 @@ moles.forEach(mole => mole.addEventListener('click', bonk))
 function addTwo(a) {
     return a.toUpperCase()
 }
+
+

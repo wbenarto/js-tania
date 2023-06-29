@@ -84,20 +84,29 @@ body,html {
     width: 150px;
     height: 150px;
     overflow: hidden;
-    background-color: yellow;
     /* background-image: url('/asset/hole.png'); */
 }
 
 .gravel {
     position: absolute;
-    background-image: blue;
-    height: 100px;
+    height: 50px;
     width: 100%;
     bottom: 0;
+    margin-bottom: -8px;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
- 
+
+.mole {
+    background: url('./mole.svg') bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+}
+
 .mole:after {
     display: block;
     /* background: url() bottom center no-repeat; */
@@ -108,17 +117,6 @@ body,html {
     position: absolute;
     z-index:2;
     bottom: -30px;
-    z-index: 3;
-}
-
-.mole {
-    background: url('./mole.svg') bottom center no-repeat;
-    background-size: 60%;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    transition: all 0.4s;
 }
 
 .hole.up .mole {
