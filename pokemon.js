@@ -22,14 +22,22 @@ async function fetchPokemonData(pokemonName) {
 }
 
 // Usage example
-const pokemonName = 'pikachu'; // Replace this with the desired Pokemon name
+const pokemonName = 'charmander'; // Replace this with the desired Pokemon name
 let pokemonCard = document.querySelector('.pokemon-name')
+let pokemonWeight = document.querySelector('.pokemon-weight')
+let pokemonHeight = document.querySelector('.pokemon-height')
+let pokemonSprite = document.querySelector('.pokemon-image')
+
 // Function execution
 fetchPokemonData(pokemonName)
 .then((pokemonData) => {
     console.log('Pokemon Data:', pokemonData);
     console.log('pokemon name ' , pokemonData.name)
     pokemonCard.innerHTML = pokemonData.name
+    pokemonWeight.innerHTML = pokemonData.weight
+    pokemonHeight.innerHTML = pokemonData.height
+    pokemonSprite.src = pokemonData.sprites.front_default
+
 
     // Do whatever you want with the retrieved data here
 })
