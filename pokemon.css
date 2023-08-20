@@ -1,5 +1,5 @@
 #header {
-    color: pink;
+    color: dark green;
 }
 .pokemon-card {
     width: 300px;
@@ -18,4 +18,5 @@
 
 .pokemon-info {
     display: flex;
+    color: black;
 }

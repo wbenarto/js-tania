@@ -112,3 +112,11 @@ wb: Inline Styling and External Page
 # 3/5/2023 Implement Countdown on the project target (1 hour)
 
 # 6/28/2023 Found a new bug in the timer (Starts at 20 seconds, stops at 10 seconds instead of 0 seconds.)
+
+# 8/20/2023 Psuedo Code (Add the abilities to the Pokemon card)
+
+<!-- 1. Add a new document.querySelector -->
+<!-- 2. Fetch the abilities -->
+<!-- 3. Add a new <h5> with class -->
+<!-- 4. Styling in css -->
+<!-- 5. Debug -->

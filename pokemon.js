@@ -22,11 +22,13 @@ async function fetchPokemonData(pokemonName) {
 }
 
 // Usage example
-const pokemonName = 'charmander'; // Replace this with the desired Pokemon name
+const pokemonName = 'pikachu'; // Replace this with the desired Pokemon name
 let pokemonCard = document.querySelector('.pokemon-name')
 let pokemonWeight = document.querySelector('.pokemon-weight')
 let pokemonHeight = document.querySelector('.pokemon-height')
 let pokemonSprite = document.querySelector('.pokemon-image')
+let pokemonAbilities = document.querySelector('.pokemon-abilities')
+
 
 // Function execution
 fetchPokemonData(pokemonName)
@@ -37,6 +39,19 @@ fetchPokemonData(pokemonName)
     pokemonWeight.innerHTML = pokemonData.weight
     pokemonHeight.innerHTML = pokemonData.height
     pokemonSprite.src = pokemonData.sprites.front_default
+    for (let i=0;i<pokemonData.abilities.length;i++) {
+        
+        console.log(pokemonData.abilities[i].ability.name)
+    pokemonAbilities.innerHTML = pokemonData.abilities[i].ability.name
+
+    var element = document.createElement('p');
+
+            // Set some content for the element
+            element.textContent = pokemonData.abilities[i].ability.name;
+
+            // Append the element to the container
+            pokemonAbilities.appendChild(element);
+        }
 
 
     // Do whatever you want with the retrieved data here
@@ -53,9 +68,6 @@ fetchPokemonData('eevee')
 .catch((err) => {
     console.error(err)
 })
-
-
-
 
 
 // Try and Catch block
