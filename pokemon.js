@@ -42,7 +42,7 @@ fetchPokemonData(pokemonName)
     for (let i=0;i<pokemonData.abilities.length;i++) {
         
         console.log(pokemonData.abilities[i].ability.name)
-    pokemonAbilities.innerHTML = pokemonData.abilities[i].ability.name
+    // pokemonAbilities.innerHTML = pokemonData.abilities[i].ability.name
 
     var element = document.createElement('p');
 
