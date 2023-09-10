@@ -28,6 +28,11 @@ let pokemonWeight = document.querySelector('.pokemon-weight')
 let pokemonHeight = document.querySelector('.pokemon-height')
 let pokemonSprite = document.querySelector('.pokemon-image')
 let pokemonAbilities = document.querySelector('.pokemon-abilities')
+let pokemonHp = document.querySelector('.pokemon-hp')
+let pokemonAttack = document.querySelector('.pokemon-attack')
+let pokemonDefense = document.querySelector('.pokemon-defense')
+
+
 
 
 // Function execution
@@ -38,7 +43,12 @@ fetchPokemonData(pokemonName)
     pokemonCard.innerHTML = pokemonData.name
     pokemonWeight.innerHTML = pokemonData.weight
     pokemonHeight.innerHTML = pokemonData.height
+    pokemonHp.innerHTML = pokemonData.stats[0].base_stat
+    pokemonAttack.innerHTML = pokemonData.stats[1].base_stat
+    pokemonDefense.innerHTML = pokemonData.stats[2].base_stat
+
     pokemonSprite.src = pokemonData.sprites.front_default
+    
     for (let i=0;i<pokemonData.abilities.length;i++) {
         
         console.log(pokemonData.abilities[i].ability.name)
