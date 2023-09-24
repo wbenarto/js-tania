@@ -24,13 +24,13 @@ async function fetchPokemonData(pokemonName) {
 // Usage example
 const pokemonName = 'pikachu'; // Replace this with the desired Pokemon name
 let pokemonCard = document.querySelector('.pokemon-name')
-let pokemonWeight = document.querySelector('.pokemon-weight')
-let pokemonHeight = document.querySelector('.pokemon-height')
+let pokemonWeight = document.querySelector('#pokemon-weight')
+let pokemonHeight = document.querySelector('#pokemon-height')
 let pokemonSprite = document.querySelector('.pokemon-image')
-let pokemonAbilities = document.querySelector('.pokemon-abilities')
-let pokemonHp = document.querySelector('.pokemon-hp')
-let pokemonAttack = document.querySelector('.pokemon-attack')
-let pokemonDefense = document.querySelector('.pokemon-defense')
+let pokemonAbilities = document.querySelector('#pokemon-abilities')
+let pokemonHp = document.querySelector('#pokemon-hp')
+let pokemonAttack = document.querySelector('#pokemon-attack')
+let pokemonDefense = document.querySelector('#pokemon-defense')
 
 
 
@@ -40,7 +40,14 @@ fetchPokemonData(pokemonName)
 .then((pokemonData) => {
     console.log('Pokemon Data:', pokemonData);
     console.log('pokemon name ' , pokemonData.name)
-    pokemonCard.innerHTML = pokemonData.name
+
+    // Built in functions in JS to uppercase first letter
+    const pokemonName = pokemonData.name
+    const firstLetter = pokemonName.charAt(0).toUpperCase()
+    const remainingLetters = pokemonName.slice(1)
+
+
+    pokemonCard.innerHTML = firstLetter + remainingLetters
     pokemonWeight.innerHTML = pokemonData.weight
     pokemonHeight.innerHTML = pokemonData.height
     pokemonHp.innerHTML = pokemonData.stats[0].base_stat
