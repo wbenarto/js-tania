@@ -17,6 +17,7 @@
 .pokemon-card-header {
     background-color: rgb(221, 68, 68);
     text-align: center;
+    
 
 }
 
@@ -53,19 +54,20 @@
     height: 40px;
     /* white-space: normal; */
     font-size: 10;
-    overflow: auto;
-<<<<<<< HEAD
     text-align: left;   
-=======
-    justify-content: center;
->>>>>>> 4bf3fa91a1216de2a365fefb6d7eb074ed1fc2df
 }
-
+#pokemon-abilities-container {
+    height: 100px;
+}
+#pokemon-abilities {
+    overflow: auto;
+    height: 100px;
+}
 .pokemon-info-name { 
     width: 30%;
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+}
 .pokemon-att-value {
     width: 60%;
     text-align: center;
