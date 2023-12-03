@@ -9,7 +9,7 @@
     align-items: center;
 }
 .pokemon-card {
-    width: 380px;
+    width: 350px;
     background-color: pink;
     border-radius: 5px;
 }
@@ -51,6 +51,9 @@
     color: black;
     align-items: center;
     height: 40px;
+    /* white-space: normal; */
+    font-size: 10;
+    overflow: auto;
 <<<<<<< HEAD
     text-align: left;   
 =======
