@@ -30,7 +30,7 @@ async function fetchPokemonData() {
         pokemonHp.innerHTML = pokemonData.stats[0].base_stat
         pokemonAttack.innerHTML = pokemonData.stats[1].base_stat
         pokemonDefense.innerHTML = pokemonData.stats[2].base_stat
-    
+        pokemonElement.innerHTML = pokemonData.types[0].type.name
         pokemonSprite.src = pokemonData.sprites.front_default
         
         for (let i=0;i<pokemonData.abilities.length;i++) {
@@ -65,7 +65,7 @@ let pokemonAbilities = document.querySelector('#pokemon-abilities')
 let pokemonHp = document.querySelector('#pokemon-hp')
 let pokemonAttack = document.querySelector('#pokemon-attack')
 let pokemonDefense = document.querySelector('#pokemon-defense')
-
+let pokemonElement = document.querySelector('#pokemon-element')
 document.getElementById('searchButton').addEventListener('click', fetchPokemonData)
 
 
