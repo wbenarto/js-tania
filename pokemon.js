@@ -7,10 +7,9 @@ async function fetchPokemonData() {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${input}`);
 
         // If the response is not okay, throw an error Pokemon not found
-        // response.ok == false
-        // !response.ok 
+    
         if (!response.ok) {
-        throw new Error('Pokemon not found!');
+            throw new Error('Pokemon not found!');
         }
 
         // convert the response into json object
