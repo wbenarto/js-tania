@@ -47,7 +47,18 @@ async function fetchPokemonData() {
                 pokemonAbilities.appendChild(element);
             }
     
-    
+            // Trying to change the color of the background card everytime we press the search button.
+            // Set up what colors is going to be displayed
+            // Grab the colors to link (randomize)
+            // Change the background color
+
+            let colors= ["red",  "orange", "yellow", "green"]
+            let background= document.getElementsByClassName('pokemon-card-header')[0]
+            let randomNum= Math.floor(Math.random() * colors.length)
+            colors[randomNum]
+            background.style.backgroundColor= colors[randomNum]
+            background.style.color= "pink"
+
         // Do whatever you want with the retrieved data here
         return data;
     } catch (error) {
@@ -68,5 +79,6 @@ let pokemonDefense = document.querySelector('#pokemon-defense')
 let pokemonElement = document.querySelector('#pokemon-element')
 document.getElementById('searchButton').addEventListener('click', fetchPokemonData)
 
-
+console.log(document.getElementsByClassName)(pokemon-card-header)
 // Function execution
+
