@@ -6,8 +6,34 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
+
+.search-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#search-input {
+    border-radius: 10px;
+}
+
+/* .searched-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     gap: 15px;
+    width: 100%;
+    height: 400px;
+    padding-bottom: 40px;
+}
+
+.searched-item {
+    margin: auto;
+    width: 95%;
+    height: 130px; 
+    background-color: cyan;
+    border-radius: 15px;
+} */
+
 .pokemon-card {
     width: 350px;
     background-color: pink;
@@ -76,6 +102,7 @@
     width: 60%;
     text-align: center;
 }
+<<<<<<< HEAD
 
 .search-container {
     text-align: center;
@@ -113,3 +140,5 @@
   }
 </style>
 
+=======
+>>>>>>> 93564748fda83fedce896a9f2281731f514d89fd
