@@ -17,6 +17,26 @@
     border-radius: 10px;
 }
 
+.container-cols {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: blue;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fave-cards {
+    width: 200px;
+    height: 200px; 
+    background-color: pink;
+    margin: 10px 0;
+}
 /* .searched-list {
     display: grid;
     grid-template-columns: 1fr 1fr;

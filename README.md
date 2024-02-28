@@ -120,3 +120,9 @@ wb: Inline Styling and External Page
 <!-- 3. Add a new <h5> with class -->
 <!-- 4. Styling in css -->
 <!-- 5. Debug -->
+
+
+# Task on 2/28/24
+## Insert background images for all the cards 
+
+https://dribbble.com/shots/21275521-Pokedex-UI#
